@@ -1,4 +1,4 @@
-export const token = '6732315995:AAHhMVH619_bee57kMOh5y5PwVccsnkAYy8' // ambil dari bot father
+export const token = '6443639684:AAGxJBhL8XmmhFwoM87H4TAIf8PP3OSlgo8' // ambil dari bot father
 export const owner = ['1234101835'] //Ganti , jika ingin lebih dari 1 nomer tambahkan menjadi ['1234xx', '123xx', '5687xx'] 
 export const username = 'kozobigG58VD'//Ganti ambil Usernamekey dari digiflazz
 export const apiKey = 'faf3877d-53c6-5890-8bd5-1ee98d2e9a46' //Ganti ambil Productionkey dari digiflazz

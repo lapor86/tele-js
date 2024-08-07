@@ -33,7 +33,7 @@ import {
 } from './lib/myfunc.js';
 
 // Telegram Bot Token
-const channelId = '@notifyjf_store'; // ganti dengan channel id kamu
+const channelId = '@notifysalmonpay'; // ganti dengan channel id kamu
 const maxMessageLength = 4000;
 const bot = new TelegramBot(token, {
     polling: true
