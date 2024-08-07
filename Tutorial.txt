@@ -1,0 +1,10 @@
+Tutorial 
+
+1. Install Nodejs minimal versi 18 pada VPS/Panel kalian
+2. Install NPM
+3. Upload file bot ke VPS/Panel
+4. Extract file bot dan buka folder 'db' 
+5. Edit config.js , jika sudah di edit lalu save dan buka VPS kalian
+6. Ketik npm install pada VPS/Panel kalian
+7. Ketik npm start atau node .
+10. Selesai tinggal ketik /start di chat ke bot kamu
