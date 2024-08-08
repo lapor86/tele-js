@@ -1,5 +1,5 @@
 {
-  "name": "JF Bot",
+  "name": "Topup-Bot",
   "version": "1.0.0",
   "description": "Telegram Bot Topup Otomatis",
   "main": "index.js",
@@ -31,6 +31,6 @@
     "util": "^0.12.5"
   },
   "engines": {
-    "node": "^10.6.0"
+    "node": ">=14"
   }
 }
