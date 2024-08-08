@@ -873,7 +873,7 @@ const handleDepo = (query) => {
 
 const handleSMM = (query) => {
     const nomor = query.from.id;
-    let capt = `━━[ JF Bot ]━━\n\n`;
+    let capt = `━━[ Salmon Bot ]━━\n\n`;
     capt += `Silahkan pilih menu dibawah ini\n\n`
     capt += `/saldomp\n`
     capt += `/layananmp -> untuk update layanan\n`
@@ -897,7 +897,7 @@ const handleSMM = (query) => {
 
 const handleCeknickname = (query) => {
     const nomor = query.from.id;
-    let capt = `━━[ JF Bot ]━━\n\n`;
+    let capt = `━━[ Salmon Bot ]━━\n\n`;
     capt += `Silahkan pilih menu dibawah ini\n\n`
 	capt += `/cekrekening\n`
     capt += `/cekml\n`
@@ -921,7 +921,7 @@ const handleCeknickname = (query) => {
 
 const handleOwner = (query) => {
     const nomor = query.from.id;
-    let capt = `━━[ JF Bot ]━━\n\n`;
+    let capt = `━━[ Salmon Bot ]━━\n\n`;
     capt += `Silahkan pilih menu dibawah ini\n\n`
 	capt += `/isisaldo\n`
     capt += `/saldodigi\n`
