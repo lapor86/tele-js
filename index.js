@@ -816,18 +816,18 @@ const handleAdmin = (query) => {
         }
     };
 
-    bot.sendMessage(query.message.chat.id, "<a href=\"https://t.me/lux_arcadiaa\">Feriansy.r</a>", { parse_mode: "HTML" }, options );
+    bot.sendMessage(query.message.chat.id, "<a href=\"https://t.me/xvoxy\">Voxy</a>", { parse_mode: "HTML" }, options );
 };
 
 const handleDeposit = (query) => {
     const nomor = query.from.id;
     let capt = `Untuk Deposit Manual Silahkan Transfer ke Payment dibawah ini\n\n`;
     capt += `Bank dan E-Wallet\n`;
-    capt += `7635169958 | BCA\n`;
-    capt += `085773305337 | DANA (+100 perak)\n`;
-    capt += `085773305337 | GOPAY\n`;
-    capt += `085773305337 | OVO\n`;
-    capt += `089603043889 | SHOPEEPAY\n`;
+    capt += `5125076391 | BCA\n`;
+    capt += `901229360223 | SEABANK\n`;
+    capt += `082154468475 | DANA (+100 perak)\n`;
+    capt += `082154468475 | OVO\n`;
+    capt += `082154468475 | SHOPEEPAY\n`;
     capt += `Pembayaran dari Bank ke E-Wallet Wajib +1500 !!!\n\n`;
     capt += `Note :\n`;
     capt += `- Wajib Sertakan Screenshot Detail Pembayaran!!!\n`;
@@ -2902,7 +2902,7 @@ bot.on('message', (msg) => {
     }
 
     if (msg.text.toLowerCase().indexOf(contactOwnerKeyword) === 0) {
-        bot.sendMessage(msg.chat.id, "<a href=\"https://t.me/lux_arcadiaa\">Feriansy.r</a>", { parse_mode: "HTML"});
+        bot.sendMessage(msg.chat.id, "<a href=\"https://t.me/xvoxy\">Voxy</a>", { parse_mode: "HTML"});
     }
 	
 	const chatId = msg.chat.id;
