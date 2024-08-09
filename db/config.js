@@ -1,7 +1,7 @@
 export const token = '6443639684:AAGxJBhL8XmmhFwoM87H4TAIf8PP3OSlgo8' // ambil dari bot father
 export const owner = ['1592956557'] //Ganti , jika ingin lebih dari 1 nomer tambahkan menjadi ['1234xx', '123xx', '5687xx'] 
-export const username = 'kozobigG58VD'//Ganti ambil Usernamekey dari digiflazz
-export const apiKey = 'faf3877d-53c6-5890-8bd5-1ee98d2e9a46' //Ganti ambil Productionkey dari digiflazz
+export const username = 'rimokoD8Vjbg'//Ganti ambil Usernamekey dari digiflazz
+export const apiKey = 'dev-9ed5f980-5658-11ef-af00-8935e16e792e' //Ganti ambil Productionkey dari digiflazz
 export const namarekening = 'Feriansyah Rusmana' // Isi dengan nama rekening mu
 
 // Paydisini Apikey
