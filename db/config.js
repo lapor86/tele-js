@@ -6,7 +6,7 @@ export const namarekening = 'Feriansyah Rusmana' // Isi dengan nama rekening mu
 
 // Paydisini Apikey
 export const paydisini_apikey = "b0389a2c06b630398e50eb45b0493819" //Ganti ambil dari APIKEY Paydisini
-export const paydisini_nomer = '082154468475' //Ganti sesuai nomor yang terdaftar pada Paydisini
+export const paydisini_nomer = '085143050110' //Ganti sesuai nomor yang terdaftar pada Paydisini
 export const minimalDepoOtomatis = '5000' //Ganti jika ingin minimal depositnya ditambah
 export const maximalDepoOtomatis = '1000000' //Ganti jika ingin maksimal depositnya ditambah
 
