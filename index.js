@@ -36,7 +36,7 @@ import {
 const channelId = '@notifysalmonpay'; // ganti dengan channel id kamu
 const maxMessageLength = 4000;
 const bot = new TelegramBot(token, {
-    polling: true
+    polling: true, PromiseCancellation: true
 });
 
 // Path Database
