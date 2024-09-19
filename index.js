@@ -1899,6 +1899,7 @@ Silahkan Scan QR ini untuk melakukan pembayaran, hanya berlaku 5 menit`;
     }
 });
 
+
 /*bot.onText(/\/games/, (msg) => {
     try {
         const productData = JSON.parse(fs.readFileSync('./db/datadigi.json', 'utf8'));
