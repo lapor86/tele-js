@@ -11,5 +11,5 @@ export const minimalDepoOtomatis = '100' //Ganti jika ingin minimal depositnya d
 export const maximalDepoOtomatis = '1000000' //Ganti jika ingin maksimal depositnya ditambah
 
 //Medanpedia Apikey
-export const medanpedia_apikey = "juzv8o-63yqxm-hwbvte-rojswi-awdidt //apikey medanpedia
+export const medanpedia_apikey = "juzv8o-63yqxm-hwbvte-rojswi-awdidt"
 export const medanpedia_apiID = "27422" //secret medanpedia
