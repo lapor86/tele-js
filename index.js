@@ -33,7 +33,7 @@ import {
 } from './lib/myfunc.js';
 
 // Telegram Bot Token
-const channelId = '-1001591109995'; // ganti dengan channel id kamu
+const channelId = '@notifysalmonpay'; // ganti dengan channel id kamu
 const maxMessageLength = 4000;
 const bot = new TelegramBot(token, {
     polling: true
@@ -1813,12 +1813,8 @@ bot.onText(/\/order/, async (msg) => {
 bot.onText(/\/deposit(?: (.+))?/, async (msg, match) => {
     const amount = match[1];
 
-    // Validasi jika amount tidak ada atau bukan angka
-    if (!amount || isNaN(amount)) {
-        bot.sendMessage(
-            msg.chat.id, 
-            `Contoh penggunaan\n/deposit 10000\n\nMinimal deposit saldo otomatis adalah ${minimalDepoOtomatis}`
-        );
+    if (isNaN(amount)) {
+        bot.sendMessage(msg.chat.id, `Contoh penggunaan\n/deposit 10000\n\nMinimal deposit saldo otomatis adalah ${minimalDepoOtomatis}`);
         return;
     }
 
@@ -1861,7 +1857,6 @@ bot.onText(/\/deposit(?: (.+))?/, async (msg, match) => {
 
 Silahkan Scan QR ini untuk melakukan pembayaran, hanya berlaku 5 menit`;
 
-        // Mendapatkan QR code
         const qrcodeResponse = await axios({
             url: data.qrcode_url,
             responseType: 'arraybuffer'
@@ -1871,7 +1866,6 @@ Silahkan Scan QR ini untuk melakukan pembayaran, hanya berlaku 5 menit`;
         let compressedBuffer = qrcodeBuffer;
         let quality = 80;
 
-        // Kompresi gambar jika terlalu besar (> 3MB)
         while (compressedBuffer.length > 3 * 1024 * 1024 && quality > 10) {
             compressedBuffer = await sharp(qrcodeBuffer)
                 .resize({ width: 500 })
@@ -1880,21 +1874,17 @@ Silahkan Scan QR ini untuk melakukan pembayaran, hanya berlaku 5 menit`;
             quality -= 10;
         }
 
-        // Simpan sementara gambar QR code
         const compressedImagePath = `/tmp/${unique_code}.jpg`;
         fs.writeFileSync(compressedImagePath, compressedBuffer);
 
-        // Kirim gambar QR code ke pengguna
         await bot.sendPhoto(msg.chat.id, compressedImagePath, { caption: depositSaldoBot });
 
-        // Hapus file gambar setelah dikirim
         fs.unlinkSync(compressedImagePath);
 
-        // Cek status pembayaran
         const startTime = Date.now();
         checkPaymentStatusPaydisini(unique_code, startTime, msg);
     } catch (error) {
-        console.error('Terjadi kesalahan:', error.response ? error.response.data : error.message);
+        console.error('Terjadi kesalahan:', error);
         bot.sendMessage(msg.chat.id, 'Terjadi kesalahan saat memproses permintaan. Silakan coba lagi nanti.');
     }
 });
