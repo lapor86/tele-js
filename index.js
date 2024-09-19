@@ -1817,7 +1817,7 @@ bot.onText(/\/deposit(?: (.+))?/, async (msg, match) => {
     if (!amount || isNaN(amount)) {
         bot.sendMessage(
             msg.chat.id, 
-            Contoh penggunaan\n/deposit 10000\n\nMinimal deposit saldo otomatis adalah ${minimalDepoOtomatis}
+            `Contoh penggunaan\n/deposit 10000\n\nMinimal deposit saldo otomatis adalah ${minimalDepoOtomatis}`
         );
         return;
     }
