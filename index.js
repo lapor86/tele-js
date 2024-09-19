@@ -1881,7 +1881,7 @@ Silahkan Scan QR ini untuk melakukan pembayaran, hanya berlaku 5 menit`;
         }
 
         // Simpan sementara gambar QR code
-        const compressedImagePath = /tmp/${unique_code}.jpg;
+        const compressedImagePath = `/tmp/${unique_code}.jpg`;
         fs.writeFileSync(compressedImagePath, compressedBuffer);
 
         // Kirim gambar QR code ke pengguna
