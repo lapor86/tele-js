@@ -1,5 +1,5 @@
 export const token = '6710723152:AAHJuo1gQc0pzLWDK3gCq9j6sTx3ATxIm_s' // ambil dari bot father
-export const owner = ['753569421'] //Ganti , jika ingin lebih dari 1 nomer tambahkan menjadi ['1234xx', '123xx', '5687xx'] 
+export const owner = ['6415843289'] //Ganti , jika ingin lebih dari 1 nomer tambahkan menjadi ['1234xx', '123xx', '5687xx'] 
 export const username = 'yawemegNA0pW'//Ganti ambil Usernamekey dari digiflazz
 export const apiKey = 'dev-b85a9de0-4448-11ef-a6ce-2d9b32379bc0' //Ganti ambil Productionkey dari digiflazz
 export const namarekening = 'Que Sierra Mentari Ammarkhan' // Isi dengan nama rekening mu
